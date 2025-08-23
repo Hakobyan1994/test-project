@@ -7,4 +7,3 @@ class PersonDate(models.Model):
    city=models.CharField(max_length=50,blank=True)
    country=models.CharField(max_length=50,blank=True)
    index = models.CharField(max_length=10, blank=True)
-
