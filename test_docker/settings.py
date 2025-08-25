@@ -29,10 +29,12 @@ ALLOWED_HOSTS = [ '.herokuapp.com',
                  'localhost',
                  '127.0.0.1',
                  "test-project1-6937852ed04f.herokuapp.com",
+                 "api.mesrop-hakobyan.de",
                  ]
 
 
 CSRF_TRUSTED_ORIGINS = [
+    "https://api.mesrop-hakobyan.de",
     "https://test-project1-6937852ed04f.herokuapp.com",
     "https://*.herokuapp.com",   # optional, erlaubt alle Heroku-Subdomains
 ]
