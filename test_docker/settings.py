@@ -88,12 +88,25 @@ WSGI_APPLICATION = 'test_docker.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# } 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dcbv2cvblt9qit',
+        'USER': 'uc2hq6j6e3e6s5',
+        'PASSWORD': 'pd6e994a3d84c9d9143cad6c7c6adf3c9f23dff5f60c3c21da6be10b1f522e11f',
+        'HOST': 'cd6emofiekhlj.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com',
+        'PORT': '5432'
     }
-}
+} 
+
 
 
 # Password validation
